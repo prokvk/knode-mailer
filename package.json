@@ -1,0 +1,23 @@
+{
+  "name": "knode-mailer",
+  "version": "1.0.0",
+  "description": "nodemailer wrapper",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/prokvk/knode-mailer.git"
+  },
+  "author": "prokvk",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/prokvk/knode-mailer/issues"
+  },
+  "homepage": "https://github.com/prokvk/knode-mailer#readme",
+  "dependencies": {
+    "lodash": "^4.17.4",
+    "nodemailer": "^4.0.1"
+  }
+}
