@@ -13,8 +13,8 @@ module.exports = (config) ->
 		p_transport = mailer.createTransport config
 		p_transport
 
-	send: (toEmail, subject, cont, html, done) ->
-		opts = {to: toEmail, subject: subject}
+	send: (toEmail, subject, cont, html, attachments, done) ->
+		opts = {to: toEmail, subject: subject, attachments: attachments}
 
 		if html then opts.html = cont else opts.text = cont
 

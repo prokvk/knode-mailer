@@ -28,8 +28,9 @@ mailer:
 var mailer = require('knode-mailer')(config); //config should hold all the settings as shown above
 
 var htmlContent = false;
+var attachments = [{filename: 'image.jpg',path: '/path/to/image.jpg'}];
 
-mailer.send('recipient@domain.com', 'subject', 'message body', htmlContent, function(err, info) {
+mailer.send('recipient@domain.com', 'subject', 'message body', htmlContent, attachments, function(err, info) {
   if (err) {
     console.log("ERROR: " + err);
   }

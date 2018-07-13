@@ -19,11 +19,12 @@
       return p_transport;
     };
     return {
-      send: function(toEmail, subject, cont, html, done) {
+      send: function(toEmail, subject, cont, html, attachments, done) {
         var opts;
         opts = {
           to: toEmail,
-          subject: subject
+          subject: subject,
+          attachments: attachments
         };
         if (html) {
           opts.html = cont;
